@@ -52,8 +52,9 @@ namespace Denombrements
 
                 if (c == 1)
                 {
-                    Console.Write("nombre total d'éléments à gérer = "); // le nombre d'éléments à gérer
-                    int n = int.Parse(Console.ReadLine()); // saisir le nombre
+                    // saisie du nombre d'élément à gerer
+                    Console.Write("nombre total d'éléments à gérer = "); 
+                    int n = int.Parse(Console.ReadLine()); 
                     // calcul de r
                     calculR(n);
                 }
@@ -61,27 +62,31 @@ namespace Denombrements
                 {
                     if (c == 2)
                     {
-                        Console.Write("nombre total d'éléments à gérer = "); // le nombre d'éléments à gérer
-                        int t = int.Parse(Console.ReadLine()); // saisir le nombre
-                        Console.Write("nombre d'éléments dans le sous ensemble = "); // le sous ensemble
-                        int n = int.Parse(Console.ReadLine()); // saisir le nombre
+                        // saisie du nombre d'élément à gerer
+                        Console.Write("nombre total d'éléments à gérer = "); 
+                        int t = int.Parse(Console.ReadLine()); 
+                        // saisie du nombre d'élément dans le sous ensemble
+                        Console.Write("nombre d'éléments dans le sous ensemble = "); 
+                        int n = int.Parse(Console.ReadLine()); 
                         // calcul de r
                         long r = calculR2(n, t);
-                        //Console.WriteLine("résultat = " + (r1 / r2));
+                        // Affichage du résultat de la multipliaction
                         Console.WriteLine("A(" + t + "/" + n + ") = " + r);
                     }
                     else
                     {
-                        Console.Write("nombre total d'éléments à gérer = "); // le nombre d'éléments à gérer
-                        int t = int.Parse(Console.ReadLine()); // saisir le nombre
-                        Console.Write("nombre d'éléments dans le sous ensemble = "); // le sous ensemble
-                        int n = int.Parse(Console.ReadLine()); // saisir le nombre
+                        // saisie du nombre d'élément à gerer
+                        Console.Write("nombre total d'éléments à gérer = "); 
+                        int t = int.Parse(Console.ReadLine()); 
+                        // saisie du nombre d'élément dans le sous ensemble
+                        Console.Write("nombre d'éléments dans le sous ensemble = "); 
+                        int n = int.Parse(Console.ReadLine()); 
                         // calcul de r1
                         long r1 = calculR2(n, t);
                         // calcul de r2
                         long r2 = calculR(n);
                         
-                        //Console.WriteLine("résultat = " + (r1 / r2));
+                        // Affichage du résultat de la division des 2 nombres
                         Console.WriteLine("C(" + t + "/" + n + ") = " + (r1 / r2));
                     }
                 }
